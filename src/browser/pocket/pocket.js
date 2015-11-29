@@ -1,3 +1,4 @@
+import fetch from "isomorphic-fetch";
 import assert from "assert";
 const POCKET_URL = {
     request: 'https://getpocket.com/v3/oauth/request',

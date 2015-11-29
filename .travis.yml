@@ -1,0 +1,16 @@
+sudo: false
+language: node_js
+node_js: stable
+after_success:
+- test ${TRAVIS_TAG} && npm run dist
+deploy:
+  provider: releases
+  api_key:
+    secure: J7Yg25vmFhnKskTccH63tATe0+Enj6cIMBA7N2t/ACxgrPADrtD6JLkklNL4ZO/rhRN6B44Qw2vFwJVo9Q5FAJvPVZJQB+AF7esDKWJFxJK59uayrRoNyB2zS5EmKdIviuKu6JJ2OyBY8VxnmAViEG7mZivQlwUB4KP9YIh7+cZ1jGc61oVTMp+RbH1pHFj1IDtDdX16betGY7truev6uNXDBW+XWNJUZjEUWp0wJtib/f6kA9jWT5vc3PYW9Qc4EWKQ+midVtDa70hE77CE8fpPeViH8LS1X+a9kG0Oww5R2nZE2qt9RBIHYqCso6veWXsN26O7PnH2wLaXiBacaSpV5zlWuWATNc93XfKKOaEyAQFgi0RlQGMpu4j4ZgKPLkCtQfrszOelnCdom3+nikAPiqfAAn9Y4kBySjyCix4XWBOx1ieXobmzF+DG/QwMJa/XG6oayV9Ca8e0gGm/reQtHkbT+ryc8nhZZsFy+56tWVflA/VVwI6To//2znatcBEDr1zWBZfFs9TAHQ6Dhc3FSQ0kjjFOnoNiNIwLeXOg5BUhlXNr4o3t8l8qi1PDOp+Kyy6cKGYC0NWbYQ/F4gEd2ytM14hUi3siGHWVpGwEf85MlcvcMrt1BFpRnh2in9vEeJBGeQTmO0NgQ+NjHujn+HZsXG1uHjP9ApmWdi4=
+  file:
+  - read-all-later-darwin-x64.zip
+  - read-all-later-win32-x64.zip
+  on:
+    repo: azu/read-all-later
+    tags: true
+

@@ -19,7 +19,8 @@
   },
   "scripts": {
     "start": "electron .",
-    "test": "mocha"
+    "test": "mocha",
+    "dist": "electron-zip-packager ./ read-all-later --platform=darwin,win32 --arch=x64 --version=0.35.1"
   },
   "keywords": [
     "url"
@@ -27,6 +28,7 @@
   "devDependencies": {
     "babel-preset-es2015": "^6.1.18",
     "electron-prebuilt": "^0.35.1",
+    "electron-zip-packager": "^1.0.3",
     "espower-babel": "^4.0.0",
     "mocha": "^2.3.4",
     "power-assert": "^1.2.0"

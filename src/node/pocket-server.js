@@ -22,8 +22,8 @@ function startServer(startCallback, callback) {
         },
         function (username, accessToken, done) {
             callback(null, {username: username, accessToken: accessToken});
-            listenServer.close();
             process.nextTick(() => done(null, {username, accessToken}));
+            listenServer.close();
         }
     );
 
@@ -46,7 +46,7 @@ function startServer(startCallback, callback) {
                 if (req.user) {
                     res.end(req.user.accessToken);
                 }
-                res.end("login!");
+                res.end("login!\nPlease back to app.");
             }
         );
 

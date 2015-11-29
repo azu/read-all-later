@@ -12,6 +12,6 @@ app.on('ready', function () {
     require("electron-template-menu")();
     const application = new Application();
     application.launch();
-    const manager = new ServiceManger();
+    const manager = new ServiceManger(application);
     manager.start();
 });

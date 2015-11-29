@@ -11,16 +11,25 @@ Read All Later is a client for [Pocket](https://getpocket.com/).
 
 ## Installation
 
-    npm install
+Download [latest binary](https://github.com/azu/read-all-later/releases/latest)
 
 ## Usage
-
-    npm start
     
 1. Login to Pocket
 2. Paste URL
 3. (Optional) Edit Tags and URL List
 4. Read All Later!
+
+
+## Development
+
+### Installation
+
+    npm install
+
+### Usage
+
+    npm start
 
 ## Tests
 

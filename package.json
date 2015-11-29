@@ -11,7 +11,7 @@
   "bugs": {
     "url": "https://github.com/azu/read-all-later/issues"
   },
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "item url to pocket",
   "main": "index.js",
   "directories": {

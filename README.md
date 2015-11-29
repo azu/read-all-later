@@ -1,4 +1,4 @@
-# read-all-later
+# read-all-later [![Build Status](https://travis-ci.org/azu/read-all-later.svg?branch=master)](https://travis-ci.org/azu/read-all-later)
 
 Read All Later is a client for [Pocket](https://getpocket.com/).
 

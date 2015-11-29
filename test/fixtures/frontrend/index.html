@@ -1,0 +1,1715 @@
+<!doctype html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns:og="http://opengraph.org/schema/">
+<head>
+
+    <meta property="fb:page_id" content="43929265776"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <meta name="twitter:image:src"
+          content="https://gallery.mailchimp.com/0c8604ec46b9f779a3f5b6a1c/images/5adab448-d313-435f-8f93-47524f2c2156.png">
+    <meta name="twitter:description" content="Service Workers + WebP、CSSの詳細度、オフラインページほか計16リンク">
+    <meta name="twitter:title" content="Frontend Weekly Vol.43">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="Service Workers + WebP、CSSの詳細度、オフラインページほか計16リンク">
+    <meta property="og:image"
+          content="https://gallery.mailchimp.com/0c8604ec46b9f779a3f5b6a1c/images/5adab448-d313-435f-8f93-47524f2c2156.png">
+    <meta property="og:title" content="Frontend Weekly Vol.43">
+    <meta property="og:url" content="http://eepurl.com/bFF82T">
+    <!-- NAME: VIGNELLI -->
+    <!--[if gte mso 15]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frontend Weekly Vol.43: Service Workers + WebP、CSSの詳細度、オフラインページほか計16リンク</title>
+
+    <style type="text/css">
+        p {
+            margin: 10px 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+
+        img, a img {
+            border: 0;
+            height: auto;
+            outline: none;
+            text-decoration: none;
+        }
+
+        body, #bodyTable, #bodyCell {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+
+        #outlook a {
+            padding: 0;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        table {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        .ReadMsgBody {
+            width: 100%;
+        }
+
+        .ExternalClass {
+            width: 100%;
+        }
+
+        p, a, li, td, blockquote {
+            mso-line-height-rule: exactly;
+        }
+
+        a[href^=tel], a[href^=sms] {
+            color: inherit;
+            cursor: default;
+            text-decoration: none;
+        }
+
+        p, a, li, td, body, table, blockquote {
+            -ms-text-size-adjust: 100%;
+            -webkit-text-size-adjust: 100%;
+        }
+
+        .ExternalClass, .ExternalClass p, .ExternalClass td, .ExternalClass div, .ExternalClass span, .ExternalClass font {
+            line-height: 100%;
+        }
+
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        a.mcnButton {
+            display: block;
+        }
+
+        .mcnImage {
+            vertical-align: bottom;
+        }
+
+        .mcnTextContent {
+            word-break: break-word;
+        }
+
+        .mcnTextContent img {
+            height: auto !important;
+        }
+
+        .mcnDividerBlock {
+            table-layout: fixed !important;
+        }
+
+        body, #bodyTable, #templateFooter {
+            background-color: #FFFFFF;
+        }
+
+        #bodyCell {
+            border-top: 4px solid #000000;
+        }
+
+        h1 {
+            color: #000000 !important;
+            display: block;
+            font-family: Helvetica;
+            font-size: 60px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: -1px;
+            margin: 0;
+            text-align: left;
+        }
+
+        h2 {
+            color: #000000 !important;
+            display: block;
+            font-family: Helvetica;
+            font-size: 26px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: normal;
+            margin: 0;
+            text-align: left;
+        }
+
+        h3 {
+            color: #000000 !important;
+            display: block;
+            font-family: Helvetica;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: normal;
+            margin: 0;
+            text-align: left;
+        }
+
+        h4 {
+            color: #000000 !important;
+            display: block;
+            font-family: Helvetica;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: bold;
+            line-height: 125%;
+            letter-spacing: normal;
+            margin: 0;
+            text-align: left;
+        }
+
+        #templatePreheader {
+            background-color: #FFFFFF;
+            border-top: 0;
+            border-bottom: 1px solid #000000;
+        }
+
+        .preheaderContainer .mcnTextContent, .preheaderContainer .mcnTextContent p {
+            color: #000000;
+            font-family: Helvetica;
+            font-size: 11px;
+            line-height: 125%;
+            text-align: left;
+        }
+
+        .preheaderContainer .mcnTextContent a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #templateHeader {
+            background-color: #FFFFFF;
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        .headerContainer .mcnTextContent, .headerContainer .mcnTextContent p {
+            color: #000000;
+            font-family: Helvetica;
+            font-size: 15px;
+            line-height: 125%;
+            text-align: left;
+        }
+
+        .headerContainer .mcnTextContent a {
+            color: #ED1B24;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #templateBody {
+            background-color: #FFFFFF;
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        .bodyContainer .mcnTextContent, .bodyContainer .mcnTextContent p {
+            color: #666666;
+            font-family: Helvetica;
+            font-size: 15px;
+            line-height: 150%;
+            text-align: left;
+        }
+
+        .bodyContainer .mcnTextContent a {
+            color: #4183c4;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        #templateFooter {
+            border-top: 0;
+            border-bottom: 0;
+        }
+
+        .footerContainer .mcnTextContent, .footerContainer .mcnTextContent p {
+            color: #000000;
+            font-family: Helvetica;
+            font-size: 11px;
+            line-height: 125%;
+            text-align: center;
+        }
+
+        .footerContainer .mcnTextContent a {
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        @media only screen and (max-width: 480px) {
+            body, table, td, p, a, li, blockquote {
+                -webkit-text-size-adjust: none !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            body {
+                width: 100% !important;
+                min-width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .templateContainer {
+                max-width: 600px !important;
+                width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImage {
+                height: auto !important;
+                width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnShareContent, .mcnCaptionTopContent, .mcnCaptionBottomContent, .mcnTextContentContainer, .mcnBoxedTextContentContainer, .mcnImageGroupContentContainer, .mcnCaptionLeftTextContentContainer, .mcnCaptionRightTextContentContainer, .mcnCaptionLeftImageContentContainer, .mcnCaptionRightImageContentContainer, .mcnImageCardLeftTextContentContainer, .mcnImageCardRightTextContentContainer {
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnBoxedTextContentContainer {
+                min-width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupContent {
+                padding: 9px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnCaptionLeftContentOuter .mcnTextContent, .mcnCaptionRightContentOuter .mcnTextContent {
+                padding-top: 9px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardTopImageContent, .mcnCaptionBlockInner .mcnCaptionTopContent:last-child .mcnTextContent {
+                padding-top: 18px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardBottomImageContent {
+                padding-bottom: 9px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupBlockInner {
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageGroupBlockOuter {
+                padding-top: 9px !important;
+                padding-bottom: 9px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnTextContent, .mcnBoxedTextContentColumn {
+                padding-right: 18px !important;
+                padding-left: 18px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnImageCardLeftImageContent, .mcnImageCardRightImageContent {
+                padding-right: 18px !important;
+                padding-bottom: 0 !important;
+                padding-left: 18px !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcpreview-image-uploader {
+                display: none !important;
+                width: 100% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 30px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            h2 {
+                font-size: 24px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            h3 {
+                font-size: 22px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            h4 {
+                font-size: 18px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .mcnBoxedTextContentContainer .mcnTextContent, .mcnBoxedTextContentContainer .mcnTextContent p {
+                font-size: 18px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            #templatePreheader {
+                display: block !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .preheaderContainer .mcnTextContent, .preheaderContainer .mcnTextContent p {
+                font-size: 14px !important;
+                line-height: 115% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .headerContainer .mcnTextContent, .headerContainer .mcnTextContent p {
+                font-size: 18px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .bodyContainer .mcnTextContent, .bodyContainer .mcnTextContent p {
+                font-size: 18px !important;
+                line-height: 125% !important;
+            }
+
+        }
+
+        @media only screen and (max-width: 480px) {
+            .footerContainer .mcnTextContent, .footerContainer .mcnTextContent p {
+                font-size: 14px !important;
+                line-height: 115% !important;
+            }
+
+        }</style>
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var _gaq = _gaq || [];
+            _gaq.push(["_setAccount", "UA-58312341-1"]);
+            _gaq.push(["_setDomainName", ".campaign-archive.com"]);
+            _gaq.push(["_trackPageview"]);
+            _gaq.push(["_setAllowLinker", true]);
+        } catch (err) {
+            console.log(err);
+        }</script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://us2.campaign-archive2.com/css/archivebar-desktop.css" mc:nocompile>
+    <script type="text/javascript" src="http://us2.campaign-archive2.com/js/archivebar-desktop-plugins.js"
+            mc:nocompile></script>
+    <script src="http://downloads.mailchimp.com/ZeroClipboard.min.js" mc:nocompile></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            ZeroClipboard.setDefaults({
+                moviePath: "//downloads.mailchimp.com/ZeroClipboard.07.13.swf",
+                trustedDomains: ['us2.campaign-archive2.com']
+            });
+            var clip = new ZeroClipboard($('#copyURL'));
+            clip.setHandCursor(true);
+            clip.on('complete', function (client, args) {
+                alert('Copied "' + args.text + '" to your clipboard.');
+            });
+            clip.on('mouseover', function (client) {
+                $('#copyURL').addClass('hover');
+            });
+            clip.on('mouseout', function (client) {
+                $('#copyURL').removeClass('hover');
+            });
+
+            $('li.more > a').click(function () {
+                var toToggle = $($(this).attr('href'));
+                if (toToggle.is(':visible')) {
+                    toToggle.slideUp('fast');
+                    $(this).removeClass('is-active');
+                    if ($('#awesomebar').find('.is-active').length < 1) {
+                        $('#awesomebar').removeClass('sub-active');
+                    }
+                } else {
+                    toToggle.slideDown('fast');
+                    $(this).addClass('is-active');
+                    $('#awesomebar').addClass('sub-active');
+                }
+                return false;
+            });
+
+        });
+    </script>
+    <script src="http://us2.campaign-archive2.com/js/mailchimp/fancyzoom.mc.js"></script>
+    <script type="text/javascript">
+        function incrementFacebookLikeCount() {
+            var current = parseInt($('#campaign-fb-like-btn span').html());
+            $('#campaign-fb-like-btn span').fadeOut().html(++current).fadeIn();
+        }
+
+        function getUrlParams(str) {
+            var vars = {}, hash;
+            if (!str) {
+                return vars;
+            }
+            var hashes = str.slice(str.indexOf('?') + 1).split('&');
+            for (var i = 0; i < hashes.length; i++) {
+                hash = hashes[i].split('=');
+                vars[hash[0]] = hash[1];
+            }
+            return vars;
+        }
+
+        function setupSocialSharingStuffs() {
+            var numSocialElems = $('a[rel=socialproxy]').length;
+            var numSocialInitialized = 0;
+            var urlParams = getUrlParams(window.document.location.href);
+            var paramsToCopy = {'e': true, 'eo': true};
+            $('a[rel=socialproxy]').each(function () {
+                var href = $(this).attr('href');
+                var newHref = decodeURIComponent(href.match(/socialproxy=(.*)/)[1]);
+                // for facebook insanity to work well, it needs to all be run against just campaign-archive
+                newHref = newHref.replace(/campaign-archive(\d)/gi, 'campaign-archive');
+                var newHrefParams = getUrlParams(newHref);
+                for (var param in urlParams) {
+                    if ((param in paramsToCopy) && !(param in newHrefParams)) {
+                        newHref += '&' + param + '=' + urlParams[param];
+                    }
+                }
+                $(this).attr('href', newHref);
+                if (href.indexOf('facebook-comment') !== -1) {
+                    $(this).fancyZoom({"zoom_id": "social-proxy", "width": 620, "height": 450, "iframe_height": 450});
+                } else {
+                    $(this).fancyZoom({"zoom_id": "social-proxy", "width": 500, "height": 200, "iframe_height": 500});
+                }
+                numSocialInitialized++;
+            });
+        }
+        if (window.top != window.self) {
+            $(function () {
+                var iframeOffset = $("#archive", window.parent.document).offset();
+                $("a").each(function () {
+                    var link = $(this);
+                    var href = link.attr("href");
+                    if (href && href[0] == "#") {
+                        var name = href.substring(1);
+                        $(this).click(function () {
+                            var nameElement = $("[name='" + name + "']");
+                            var idElement = $("#" + name);
+                            var element = null;
+                            if (nameElement.length > 0) {
+                                element = nameElement;
+                            } else if (idElement.length > 0) {
+                                element = idElement;
+                            }
+
+                            if (element) {
+                                var offset = element.offset();
+                                var height = element.height();
+                                //3 is totally arbitrary, but seems to work best.
+                                window.parent.scrollTo(offset.left, (offset.top + iframeOffset.top - (height * 3)));
+                            }
+
+                            return false;
+                        });
+                    }
+                });
+            });
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setupSocialSharingStuffs();
+        });
+    </script>
+</head>
+<body id="archivebody">
+<div id="awesomewrap">
+    <div id="awesomeshare">
+        <div id="zclipwrap"><label for="shortURL">Short URL</label> <span id="copyURL" data-clipboard-target="shortURL"> <input
+                id="shortURL" name="shorturl" style="margin-top:6px;" type="text" value="http://eepurl.com/bFF82T"
+                class="av-text"> <span>Copy</span> </span>
+
+            <div id="zero_clipboard"></div>
+        </div>
+        <ul id="awesomesocial">
+            <li class="fbk"><a class="fbk-like" id="campaign-fb-like-btn" rel="socialproxy"
+                               href="/?socialproxy=http%3A%2F%2Fus2.campaign-archive1.com%2Fsocial-proxy%2Ffacebook-like%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26url%3Dhttp%253A%252F%252Fus2.campaign-archive1.com%252F%253Fu%253D0c8604ec46b9f779a3f5b6a1c%2526id%253Ddd176efe76%26title%3DFrontend%2520Weekly%2520Vol.43%253A%25C2%25A0Service%2520Workers%2520%252B%2520WebP%25E3%2580%2581CSS%25E3%2581%25AE%25E8%25A9%25B3%25E7%25B4%25B0%25E5%25BA%25A6%25E3%2580%2581%25E3%2582%25AA%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25BB%25E3%2581%258B%25E8%25A8%258816%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AF"
+                               title="Like Frontend Weekly Vol.43: Service Workers + WebP、CSSの詳細度、オフラインページほか計16リンク on Facebook">Facebook
+                <b>0 <i>likes</i></b></a></li>
+            <li class="twt"><a title="Share on Twitter" target="_blank"
+                               href="http://twitter.com/share?url=http%3A%2F%2Feepurl.com%2FbFF82T">Twitter <b>0 <i>tweets</i></b></a>
+            </li>
+            <li class="ggl"><a title="+1 on Google Plus" id="campaign-gpo-btn"
+                               href="http://us2.campaign-archive2.com/?u=0c8604ec46b9f779a3f5b6a1c&amp;id=dd176efe76&amp;socialproxy=http%3A%2F%2Fus2.campaign-archive1.com%2Fsocial-proxy%2Fgoogle-plus-one%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26url%3Dhttp%253A%252F%252Fus2.campaign-archive2.com%252F%253Fu%253D0c8604ec46b9f779a3f5b6a1c%2526id%253Ddd176efe76%26title%3DFrontend%2520Weekly%2520Vol.43%253A%25C2%25A0Service%2520Workers%2520%252B%2520WebP%25E3%2580%2581CSS%25E3%2581%25AE%25E8%25A9%25B3%25E7%25B4%25B0%25E5%25BA%25A6%25E3%2580%2581%25E3%2582%25AA%25E3%2583%2595%25E3%2583%25A9%25E3%2582%25A4%25E3%2583%25B3%25E3%2583%259A%25E3%2583%25BC%25E3%2582%25B8%25E3%2581%25BB%25E3%2581%258B%25E8%25A8%258816%25E3%2583%25AA%25E3%2583%25B3%25E3%2582%25AF"
+                               class="twitter-share-button" rel="socialproxy">Google +1</a></li>
+        </ul>
+    </div>
+    <ul id="awesomebar">
+        <li><a href="http://eepurl.com/baDu5L" title="Subscribe to List" target="_blank">Subscribe</a></li>
+        <li id="toggleshare" class="more"><a href="#awesomeshare">Share</a></li>
+        <li><a href="http://us2.campaign-archive1.com/home/?u=0c8604ec46b9f779a3f5b6a1c&amp;id=9af01549dd"
+               title="View Past Issues" target="_blank">Past Issues</a></li>
+        <li class="float-r"><a class="rss" target="_blank"
+                               href="http://us2.campaign-archive1.com/feed?u=0c8604ec46b9f779a3f5b6a1c&amp;id=9af01549dd"
+                               title="subscribe to the email archive feed">RSS</a></li>
+        <li class="float-r more"><a href="#translate">Translate</a>
+            <ul id="translate">
+                <li><a rel="nofollow" title="English"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|en&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">English</a>
+                </li>
+                <li><a rel="nofollow" title="العربية"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ar&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">العربية</a>
+                </li>
+                <li><a rel="nofollow" title="Afrikaans"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|af&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Afrikaans</a>
+                </li>
+                <li><a rel="nofollow" title="беларуская мова"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|be&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">беларуская
+                    мова</a></li>
+                <li><a rel="nofollow" title="български"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|bg&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">български</a>
+                </li>
+                <li><a rel="nofollow" title="català"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ca&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">català</a>
+                </li>
+                <li><a rel="nofollow" title="中文（简体）"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-CN&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">中文（简体）</a>
+                </li>
+                <li><a rel="nofollow" title="中文（繁體）"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|zh-TW&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">中文（繁體）</a>
+                </li>
+                <li><a rel="nofollow" title="Hrvatski"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hr&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Hrvatski</a>
+                </li>
+                <li><a rel="nofollow" title="Česky"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|cs&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Česky</a>
+                </li>
+                <li><a rel="nofollow" title="Dansk"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|da&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Dansk</a>
+                </li>
+                <li><a rel="nofollow" title="eesti&nbsp;keel"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|et&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">eesti&nbsp;keel</a>
+                </li>
+                <li><a rel="nofollow" title="Nederlands"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|nl&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Nederlands</a>
+                </li>
+                <li><a rel="nofollow" title="Suomi"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fi&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Suomi</a>
+                </li>
+                <li><a rel="nofollow" title="Fran&ccedil;ais"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|fr&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Fran&ccedil;ais</a>
+                </li>
+                <li><a rel="nofollow" title="Deutsch"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|de&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Deutsch</a>
+                </li>
+                <li><a rel="nofollow" title="&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|el&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">&Epsilon;&lambda;&lambda;&eta;&nu;&iota;&kappa;ή</a>
+                </li>
+                <li><a rel="nofollow" title="हिन्दी"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hi&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">हिन्दी</a>
+                </li>
+                <li><a rel="nofollow" title="Magyar"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|hu&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Magyar</a>
+                </li>
+                <li><a rel="nofollow" title="Gaeilge"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ga&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Gaeilge</a>
+                </li>
+                <li><a rel="nofollow" title="Indonesia"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|id&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Indonesia</a>
+                </li>
+                <li><a rel="nofollow" title="íslenska"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|is&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">íslenska</a>
+                </li>
+                <li><a rel="nofollow" title="Italiano"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|it&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Italiano</a>
+                </li>
+                <li><a rel="nofollow" title="日本語"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ja&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">日本語</a>
+                </li>
+                <li><a rel="nofollow" title="ភាសាខ្មែរ"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|km&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">ភាសាខ្មែរ</a>
+                </li>
+                <li><a rel="nofollow" title="한국어"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ko&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">한국어</a>
+                </li>
+                <li><a rel="nofollow" title="македонски&nbsp;јазик"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mk&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">македонски&nbsp;јазик</a>
+                </li>
+                <li><a rel="nofollow" title="بهاس ملايو"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ms&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">بهاس
+                    ملايو</a></li>
+                <li><a rel="nofollow" title="Malti"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|mt&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Malti</a>
+                </li>
+                <li><a rel="nofollow" title="Norsk"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|no&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Norsk</a>
+                </li>
+                <li><a rel="nofollow" title="Polski"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pl&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Polski</a>
+                </li>
+                <li><a rel="nofollow" title="Portugu&ecirc;s"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Portugu&ecirc;s</a>
+                </li>
+                <li><a rel="nofollow" title="Portugu&ecirc;s&nbsp;-&nbsp;Portugal"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|pt-PT&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Portugu&ecirc;s&nbsp;-&nbsp;Portugal</a>
+                </li>
+                <li><a rel="nofollow" title="Rom&acirc;nă"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ro&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Rom&acirc;nă</a>
+                </li>
+                <li><a rel="nofollow" title="Русский"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ru&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Русский</a>
+                </li>
+                <li><a rel="nofollow" title="Espa&ntilde;ol"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|es&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Espa&ntilde;ol</a>
+                </li>
+                <li><a rel="nofollow" title="Kiswahili"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sw&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Kiswahili</a>
+                </li>
+                <li><a rel="nofollow" title="Svenska"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sv&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Svenska</a>
+                </li>
+                <li><a rel="nofollow" title="עברית"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|iw&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">עברית</a>
+                </li>
+                <li><a rel="nofollow" title="Lietuvių"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lt&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Lietuvių</a>
+                </li>
+                <li><a rel="nofollow" title="latviešu"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|lv&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">latviešu</a>
+                </li>
+                <li><a rel="nofollow" title="slovenčina"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sk&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">slovenčina</a>
+                </li>
+                <li><a rel="nofollow" title="slovenščina"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sl&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">slovenščina</a>
+                </li>
+                <li><a rel="nofollow" title="српски"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|sr&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">српски</a>
+                </li>
+                <li><a rel="nofollow" title="தமிழ்"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|ta&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">தமிழ்</a>
+                </li>
+                <li><a rel="nofollow" title="ภาษาไทย"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|th&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">ภาษาไทย</a>
+                </li>
+                <li><a rel="nofollow" title="Türkçe"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tr&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Türkçe</a>
+                </li>
+                <li><a rel="nofollow" title="Filipino"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|tl&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Filipino</a>
+                </li>
+                <li><a rel="nofollow" title="украї́нська"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|uk&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">украї́нська</a>
+                </li>
+                <li><a rel="nofollow" title="Tiếng&nbsp;Việt"
+                       href="http://translate.google.com/translate?hl=auto&amp;langpair=auto|vi&amp;u=http%3A%2F%2Fus2.campaign-archive2.com%2F%3Fu%3D0c8604ec46b9f779a3f5b6a1c%26id%3Ddd176efe76%26e%3De56aeee38d">Tiếng&nbsp;Việt</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0"
+      style="height: 100%;margin: 0;padding: 0;width: 100%;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;">
+<div itemscope itemtype="http://schema.org/EmailMessage">
+    <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="Studio Mohawk">
+        <link itemprop="url" content="http://css.studiomohawk.com">
+    </div>
+    <div itemprop="about" itemscope itemtype="http://schema.org/Offer">
+        <link itemprop="image"
+              href="https://gallery.mailchimp.com/0c8604ec46b9f779a3f5b6a1c/images/5adab448-d313-435f-8f93-47524f2c2156.png">
+    </div>
+</div>
+<center>
+    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable"
+           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;background-color: #FFFFFF;">
+        <tr>
+            <td align="center" valign="top" id="bodyCell"
+                style="padding-bottom: 40px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;height: 100%;margin: 0;padding: 0;width: 100%;border-top: 4px solid #000000;">
+                <!-- BEGIN TEMPLATE // -->
+                <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                    <tr>
+                        <td align="center" valign="top"
+                            style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <!-- BEGIN PREHEADER // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader"
+                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 1px solid #000000;">
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600"
+                                               class="templateContainer"
+                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <tr>
+                                                <td valign="top" class="preheaderContainer"
+                                                    style="padding-top: 10px;padding-bottom: 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="366"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-left: 18px;padding-bottom: 9px;padding-right: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: left;">
+
+                                                                            <span style="color: #000000;font-family: helvetica neue,helvetica,segoe ui,arial,freesans,sans-serif;font-size: 12px;line-height: 25.6000003814697px;">フロントエンド開発者のためのメールマガジン</span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                                <table align="right" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="197"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: left;">
+
+                                                                            <a href="http://us2.campaign-archive2.com/?u=0c8604ec46b9f779a3f5b6a1c&id=dd176efe76&e=e56aeee38d"
+                                                                               target="_blank"
+                                                                               style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">View
+                                                                                this email in your browser</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // END PREHEADER -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top"
+                            style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <!-- BEGIN HEADER // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader"
+                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600"
+                                               class="templateContainer"
+                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <tr>
+                                                <td valign="top" class="headerContainer"
+                                                    style="padding-top: 10px;padding-bottom: 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="100%"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 15px;line-height: 125%;text-align: left;">
+
+                                                                            <div style="width: 150px; margin:0 auto">
+                                                                                <img align="center"
+                                                                                     src="https://gallery.mailchimp.com/0c8604ec46b9f779a3f5b6a1c/images/5adab448-d313-435f-8f93-47524f2c2156.png"
+                                                                                     style="width: 100%;margin: 0px;border: 0;height: auto !important;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
+                                                                                     width="100%"></div>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnDividerBlock"
+                                                           style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+                                                        <tbody class="mcnDividerBlockOuter">
+                                                        <tr>
+                                                            <td class="mcnDividerBlockInner"
+                                                                style="min-width: 100%;padding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table class="mcnDividerContent" border="0"
+                                                                       cellpadding="0" cellspacing="0" width="100%"
+                                                                       style="min-width: 100%;border-top-width: 4px;border-top-style: solid;border-top-color: #000000;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                            <span></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--
+                                                                                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                                                                                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+                                                                -->
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // END HEADER -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top"
+                            style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <!-- BEGIN BODY // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody"
+                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600"
+                                               class="templateContainer"
+                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <tr>
+                                                <td valign="top" class="bodyContainer"
+                                                    style="padding-top: 10px;padding-bottom: 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="100%"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+
+                                                                            <h2 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                Headlines</h2>
+                                                                            &nbsp;
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://deanhume.com/Home/BlogPost/service-workers--dynamic-responsive-images-using-webp-images/10132"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Service
+                                                                                    Workers: Dynamic Responsive Images
+                                                                                    using WebP Images by Dean Hume</a>
+                                                                            </h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                Service Workersを使って動的にWebP +
+                                                                                レスポンシブ・イメージを実装する方法。pictureについても、Service
+                                                                                Workersについてもコードスニペット付きで詳しく解説。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://philipwalton.com/articles/do-we-actually-need-specificity-in-css/"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Do
+                                                                                    We Actually Need Specificity In CSS?
+                                                                                    by Philip Walton</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                Philip
+                                                                                Walton氏によるCSSの詳細度が本当に必要なのか、についての問いかけ。記事では詳細度による複雑性を回避するためのアプローチについても触れている。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://www.theguardian.com/info/developer-blog/2015/nov/04/building-an-offline-page-for-theguardiancom"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Building
+                                                                                    an offline page for theguardian.com
+                                                                                    by The Guardian</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                The Guardianで実装されているService
+                                                                                Workersを使ったオフライン時ページについて。クロスワードパズルができるという新聞らしいアプローチの実装例。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://www.w3.org/2015/10/28-html-minutes.html"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Future
+                                                                                    of HTML (TPAC) – 28 Oct 2015</a>
+                                                                            </h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                TPACで議論されたHTMLの未来についての議事録。様々な視点からの議論の様子が非常に興味深い。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://rachelandrew.co.uk/archives/2015/11/03/three-years-with-css-grid-layout/"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Three
+                                                                                    years with CSS Grid Layout</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                CSS Grid
+                                                                                Layout周辺の動きについての振り返り。IE10以後、Edgeにはすでに実装され、他のブラウザの開発版ではFlagを有効にすれば検証することができる。少しずつながら現実味を帯びてきたGridを見なおしてみよう</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://codeutopia.net/blog/2015/11/01/how-to-fix-javascript-errors-more-easily-with-chromes-debugger/"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">How
+                                                                                    to fix JavaScript errors more easily
+                                                                                    with Chrome’s debugger by
+                                                                                    CodeUtopia</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                なんとなくconsole.logを使ってJavaScriptのデバッグをしていないだろうか?
+                                                                                ChromeのDevToolsを使ってより賢くデバッグする方法について、詳しく解説。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://uxmovement.com/mobile/list-vs-grid-view-when-to-use-which-on-mobile/"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">List
+                                                                                    vs. Grid View: When to Use Which on
+                                                                                    Mobile by UX Movement</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                モバイルにおけるUIパターンの中でも必ず議論の的になるリストとグリッドビューについて。それぞれのUIがどんな問題を解決しているのか。しっかり理解して使い分けたい。</p>
+
+                                                                            <h2 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                Slides/Videos</h2>
+                                                                            &nbsp;
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="http://www.thecssninja.com/browser/jsconfeu15"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">So
+                                                                                    how does the browser actually render
+                                                                                    a website by The CSS Ninja</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                ブラウザが実際にウェブページをどうやってレンダリングしているのか? Ryan
+                                                                                Seddon氏による9月にベルリンで開催されたJSConfEU
+                                                                                2015の発表。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://speakerdeck.com/kdaniels/we-are-all-devops"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">We
+                                                                                    are all Devops by Katherine
+                                                                                    Daniels</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                EtsyのKatherine
+                                                                                Daniels氏によるDevOps文化に関するスライド。大きなチームであろうと、そうでなかろうとDevとOpsを管理するのは人だけではなく、文化が大事。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://speakerdeck.com/broccolini/empowering-designers-to-code"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Empowering
+                                                                                    Designers to Code by Diana</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                デザイナーがコードを書くために知っておきたい前準備。一昔前よりもコーディングすることへのハードルは高くなってきているものの、チームとして環境を用意しておく心構えこそが大事。</p>
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://www.youtube.com/watch?v=hQWUKcLmf8Q"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">The
+                                                                                    State of Front-End Dev</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                Chris Coyier氏、Jina Bolton氏、Rebecca
+                                                                                Murphey氏など6名のフロントエンダー達による30分のフロントエンド開発の現状についてのパネルディスカッション。</p>
+
+                                                                            <h2 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                Announcement</h2>
+                                                                            &nbsp;
+
+                                                                            <h3 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 20px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                <a href="https://studiomohawk.typeform.com/to/Kj8Gaj"
+                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">Slack
+                                                                                    for Frontend Weekly</a></h3>
+
+                                                                            <p style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #666666;font-family: Helvetica;font-size: 15px;line-height: 150%;text-align: left;">
+                                                                                Frontend
+                                                                                Weeklyの『実験的』Slackコミュニティに興味がある方は、<a
+                                                                                    href="https://studiomohawk.typeform.com/to/Kj8Gaj"
+                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;">こちら</a>から招待をリクエストしてください。
+                                                                                週次で50人くらいずつ招待をして行くつもりです。</p>
+
+                                                                            <h2 style="display: block;margin: 0;padding: 0;font-family: Helvetica;font-size: 26px;font-style: normal;font-weight: bold;line-height: 125%;letter-spacing: normal;text-align: left;color: #000000 !important;">
+                                                                                In Brief</h2>
+
+                                                                            <ul>
+                                                                                <li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <a href="http://reactcheatsheet.com/"
+                                                                                       style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;"><strong>React
+                                                                                        Cheat Sheet</strong></a>:
+                                                                                    React.jsのチートシート集。現時点では40くらいのチートが登録されている。
+                                                                                </li>
+                                                                                <li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <a href="http://rscss.io/"
+                                                                                       style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;"><strong>rscss</strong></a>:
+                                                                                    中大規模のサイトを想定したCSS設計システム。ドキュメントが特に秀逸で設計についての学びも多い。
+                                                                                </li>
+                                                                                <li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <a href="http://blog.cybozu.io/entry/2015/11/04/080000"
+                                                                                       style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;"><strong>cybozu.com
+                                                                                        稼働状況 を React/Redux で作り直した話 by
+                                                                                        サイボウズエンジニアのブログ</strong></a>:
+                                                                                    cybozu.comにおけるReact/Reduxのケーススタディ。
+                                                                                </li>
+                                                                                <li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <a href="http://morgancarter.com.au/design-solutions/which-input-when/"
+                                                                                       style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;"><strong>Which
+                                                                                        Input When? by Morgan
+                                                                                        Carter</strong></a>:
+                                                                                    入力UIを適切を選ぶことで使い勝手は大きく向上する。Good/Badの例を挙げてわかりやすく解説。
+                                                                                </li>
+                                                                                <li style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                    <a href="http://purecssapple.com/"
+                                                                                       style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #4183c4;font-weight: bold;text-decoration: none;"><strong>Pure
+                                                                                        CSS Apple Device
+                                                                                        Generator</strong></a>:
+                                                                                    MacBookやiPhoneなどのApple製品をHTML+CSSで再現し、コードを書き出すツール。
+                                                                                </li>
+                                                                            </ul>
+
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // END BODY -->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" valign="top"
+                            style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                            <!-- BEGIN FOOTER // -->
+                            <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter"
+                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;background-color: #FFFFFF;border-top: 0;border-bottom: 0;">
+                                <tr>
+                                    <td align="center" valign="top"
+                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="600"
+                                               class="templateContainer"
+                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                            <tr>
+                                                <td valign="top" class="footerContainer"
+                                                    style="padding-top: 10px;padding-bottom: 10px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnDividerBlock"
+                                                           style="min-width: 100%;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;table-layout: fixed !important;">
+                                                        <tbody class="mcnDividerBlockOuter">
+                                                        <tr>
+                                                            <td class="mcnDividerBlockInner"
+                                                                style="min-width: 100%;padding: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                <table class="mcnDividerContent" border="0"
+                                                                       cellpadding="0" cellspacing="0" width="100%"
+                                                                       style="min-width: 100%;border-top-width: 4px;border-top-style: solid;border-top-color: #000000;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                            <span></span>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <!--
+                                                                                <td class="mcnDividerBlockInner" style="padding: 18px;">
+                                                                                <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+                                                                -->
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="100%"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;">
+
+                                                                            Carefully Curated by <a
+                                                                                href="https://twitter.com/cssradar"
+                                                                                target="_blank"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">Yuya
+                                                                            Saito</a>, <a
+                                                                                href="https://twitter.com/t32k"
+                                                                                target="_blank"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">Koji
+                                                                            Ishimoto</a>,&nbsp;<a
+                                                                                href="https://twitter.com/hiloki"
+                                                                                target="_blank"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">Hiroki
+                                                                            Tani</a>, <a
+                                                                                href="https://twitter.com/ahomu"
+                                                                                target="_blank"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">Ayumu
+                                                                            Sato</a>&nbsp;and <a
+                                                                                href="https://twitter.com/1000ch"
+                                                                                target="_blank"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">Shogo
+                                                                            Sensui</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="100%"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;">
+
+                                                                            Made Proudly at Tokyo
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnShareBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnShareBlockOuter">
+                                                        <tr>
+                                                            <td valign="top"
+                                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                class="mcnShareBlockInner">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       width="100%" class="mcnShareContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="padding-top: 0;padding-left: 9px;padding-bottom: 0;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" width="100%"
+                                                                                   class="mcnShareContent"
+                                                                                   style="border: 1px solid #EEEEEE;background-color: #FAFAFA;border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" valign="top"
+                                                                                        class="mcnShareContentItemContainer"
+                                                                                        style="padding-top: 9px;padding-right: 9px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                        <table border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td align="left"
+                                                                                                    valign="top"
+                                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <!--[if mso]>
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellspacing="0"
+                                                                                                           cellpadding="0"
+                                                                                                           width="524">
+                                                                                                        <tr>
+                                                                                                            <td align="left"
+                                                                                                                valign="top"
+                                                                                                                width="524">
+                                                                                                    <![endif]-->
+
+
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellpadding="0"
+                                                                                                           cellspacing="0"
+                                                                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top"
+                                                                                                                style="padding-right: 9px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                                                class="mcnShareContentItemContainer">
+                                                                                                                <table border="0"
+                                                                                                                       cellpadding="0"
+                                                                                                                       cellspacing="0"
+                                                                                                                       width=""
+                                                                                                                       class="mcnShareContentItem"
+                                                                                                                       style="border-collapse: separate;border: 1px solid #CCCCCC;border-radius: 5px;background-color: #FAFAFA;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                    <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align="left"
+                                                                                                                            valign="middle"
+                                                                                                                            style="padding-top: 5px;padding-right: 9px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                            <table align="left"
+                                                                                                                                   border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0"
+                                                                                                                                   width=""
+                                                                                                                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center"
+                                                                                                                                        valign="middle"
+                                                                                                                                        width="24"
+                                                                                                                                        class="mcnShareIconContent"
+                                                                                                                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Feepurl.com%2FbFF82T"
+                                                                                                                                           target="_blank"
+                                                                                                                                           style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img
+                                                                                                                                                src="http://cdn-images.mailchimp.com/icons/social-block-v2/dark-facebook-48.png"
+                                                                                                                                                style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
+                                                                                                                                                height="24"
+                                                                                                                                                width="24"
+                                                                                                                                                class=""></a>
+                                                                                                                                    </td>
+                                                                                                                                    <td align="left"
+                                                                                                                                        valign="middle"
+                                                                                                                                        class="mcnShareTextContent"
+                                                                                                                                        style="padding-left: 5px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Feepurl.com%2FbFF82T"
+                                                                                                                                           target=""
+                                                                                                                                           style="color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Share</a>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellpadding="0"
+                                                                                                           cellspacing="0"
+                                                                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top"
+                                                                                                                style="padding-right: 9px;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                                                class="mcnShareContentItemContainer">
+                                                                                                                <table border="0"
+                                                                                                                       cellpadding="0"
+                                                                                                                       cellspacing="0"
+                                                                                                                       width=""
+                                                                                                                       class="mcnShareContentItem"
+                                                                                                                       style="border-collapse: separate;border: 1px solid #CCCCCC;border-radius: 5px;background-color: #FAFAFA;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                    <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align="left"
+                                                                                                                            valign="middle"
+                                                                                                                            style="padding-top: 5px;padding-right: 9px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                            <table align="left"
+                                                                                                                                   border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0"
+                                                                                                                                   width=""
+                                                                                                                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center"
+                                                                                                                                        valign="middle"
+                                                                                                                                        width="24"
+                                                                                                                                        class="mcnShareIconContent"
+                                                                                                                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://twitter.com/intent/tweet?text=Frontend+Weekly+Vol.43%3A%C2%A0Service+Workers+%2B+WebP%E3%80%81CSS%E3%81%AE%E8%A9%B3%E7%B4%B0%E5%BA%A6%E3%80%81%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%BB%E3%81%8B%E8%A8%8816%E3%83%AA%E3%83%B3%E3%82%AF: http%3A%2F%2Feepurl.com%2FbFF82T"
+                                                                                                                                           target="_blank"
+                                                                                                                                           style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img
+                                                                                                                                                src="http://cdn-images.mailchimp.com/icons/social-block-v2/dark-twitter-48.png"
+                                                                                                                                                style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
+                                                                                                                                                height="24"
+                                                                                                                                                width="24"
+                                                                                                                                                class=""></a>
+                                                                                                                                    </td>
+                                                                                                                                    <td align="left"
+                                                                                                                                        valign="middle"
+                                                                                                                                        class="mcnShareTextContent"
+                                                                                                                                        style="padding-left: 5px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://twitter.com/intent/tweet?text=Frontend+Weekly+Vol.43%3A%C2%A0Service+Workers+%2B+WebP%E3%80%81CSS%E3%81%AE%E8%A9%B3%E7%B4%B0%E5%BA%A6%E3%80%81%E3%82%AA%E3%83%95%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%9A%E3%83%BC%E3%82%B8%E3%81%BB%E3%81%8B%E8%A8%8816%E3%83%AA%E3%83%B3%E3%82%AF: http%3A%2F%2Feepurl.com%2FbFF82T"
+                                                                                                                                           target=""
+                                                                                                                                           style="color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Tweet</a>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellpadding="0"
+                                                                                                           cellspacing="0"
+                                                                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td valign="top"
+                                                                                                                style="padding-right: 0;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                                                                class="mcnShareContentItemContainer">
+                                                                                                                <table border="0"
+                                                                                                                       cellpadding="0"
+                                                                                                                       cellspacing="0"
+                                                                                                                       width=""
+                                                                                                                       class="mcnShareContentItem"
+                                                                                                                       style="border-collapse: separate;border: 1px solid #CCCCCC;border-radius: 5px;background-color: #FAFAFA;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                    <tbody>
+                                                                                                                    <tr>
+                                                                                                                        <td align="left"
+                                                                                                                            valign="middle"
+                                                                                                                            style="padding-top: 5px;padding-right: 9px;padding-bottom: 5px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                            <table align="left"
+                                                                                                                                   border="0"
+                                                                                                                                   cellpadding="0"
+                                                                                                                                   cellspacing="0"
+                                                                                                                                   width=""
+                                                                                                                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                <tbody>
+                                                                                                                                <tr>
+                                                                                                                                    <td align="center"
+                                                                                                                                        valign="middle"
+                                                                                                                                        width="24"
+                                                                                                                                        class="mcnShareIconContent"
+                                                                                                                                        style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://us2.forward-to-friend.com/forward?u=0c8604ec46b9f779a3f5b6a1c&id=dd176efe76&e=e56aeee38d"
+                                                                                                                                           target="_blank"
+                                                                                                                                           style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img
+                                                                                                                                                src="http://cdn-images.mailchimp.com/icons/social-block-v2/dark-forwardtofriend-48.png"
+                                                                                                                                                style="display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"
+                                                                                                                                                height="24"
+                                                                                                                                                width="24"
+                                                                                                                                                class=""></a>
+                                                                                                                                    </td>
+                                                                                                                                    <td align="left"
+                                                                                                                                        valign="middle"
+                                                                                                                                        class="mcnShareTextContent"
+                                                                                                                                        style="padding-left: 5px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                                        <a href="http://us2.forward-to-friend.com/forward?u=0c8604ec46b9f779a3f5b6a1c&id=dd176efe76&e=e56aeee38d"
+                                                                                                                                           target=""
+                                                                                                                                           style="color: #505050;font-family: Arial;font-size: 12px;font-weight: normal;line-height: 100%;text-align: center;text-decoration: none;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">Forward</a>
+                                                                                                                                    </td>
+                                                                                                                                </tr>
+                                                                                                                                </tbody>
+                                                                                                                            </table>
+                                                                                                                        </td>
+                                                                                                                    </tr>
+                                                                                                                    </tbody>
+                                                                                                                </table>
+                                                                                                            </td>
+                                                                                                        </tr>
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+                                                                                                    <!--[if mso]>
+                                                                                                    </td>
+                                                                                                    </tr>
+                                                                                                    </table>
+                                                                                                    <![endif]-->
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnFollowBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnFollowBlockOuter">
+                                                        <tr>
+                                                            <td align="center" valign="top"
+                                                                style="padding: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"
+                                                                class="mcnFollowBlockInner">
+                                                                <table border="0" cellpadding="0" cellspacing="0"
+                                                                       width="100%" class="mcnFollowContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td align="center"
+                                                                            style="padding-left: 9px;padding-right: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                            <table border="0" cellpadding="0"
+                                                                                   cellspacing="0" width="100%"
+                                                                                   class="mcnFollowContent"
+                                                                                   style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                <tbody>
+                                                                                <tr>
+                                                                                    <td align="center" valign="top"
+                                                                                        style="padding-top: 9px;padding-right: 9px;padding-left: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                        <table border="0"
+                                                                                               cellpadding="0"
+                                                                                               cellspacing="0"
+                                                                                               style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                            <tbody>
+                                                                                            <tr>
+                                                                                                <td valign="top"
+                                                                                                    style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                    <!--[if mso]>
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellspacing="0"
+                                                                                                           cellpadding="0"
+                                                                                                           width="524">
+                                                                                                        <tr>
+                                                                                                            <td align="left"
+                                                                                                                valign="top"
+                                                                                                                width="524">
+                                                                                                    <![endif]-->
+
+
+                                                                                                    <table align="left"
+                                                                                                           border="0"
+                                                                                                           cellpadding="0"
+                                                                                                           cellspacing="0"
+                                                                                                           class="mcnFollowStacked"
+                                                                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                                                        <tbody>
+                                                                                                        <tr>
+                                                                                                            <td align="center"
+                                                                                                                valign="top"
+                                                                                                                class="mcnFollowIconContent"
+                                                                                                                style="padding-right: 0;padding-bottom: 9px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                                                                <a href="https://twitter.com/frontend_weekly"
+                                                                                                                   target="_blank"
+                                                                                                                   style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;"><img
+                                                                                                                        src="http://cdn-images.mailchimp.com/icons/social-block-v2/dark-twitter-96.png"
+                                                                                                                        alt="Twitter"
+                                                                                                                        class="mcnFollowBlockIcon"
+                                                                                                                        width="48"
+                                                                                                                        style="width: 48px;max-width: 48px;display: block;border: 0;height: auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;"></a>
+                                                                                                            </td>
+                                                                                                        </tr>
+
+
+                                                                                                        </tbody>
+                                                                                                    </table>
+
+
+                                                                                                    <!--[if mso]>
+                                                                                                    </td>
+                                                                                                    </tr>
+                                                                                                    </table>
+                                                                                                    <![endif]-->
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table border="0" cellpadding="0" cellspacing="0" width="100%"
+                                                           class="mcnTextBlock"
+                                                           style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                        <tbody class="mcnTextBlockOuter">
+                                                        <tr>
+                                                            <td valign="top" class="mcnTextBlockInner"
+                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+
+                                                                <table align="left" border="0" cellpadding="0"
+                                                                       cellspacing="0" width="100%"
+                                                                       class="mcnTextContentContainer"
+                                                                       style="border-collapse: collapse;mso-table-lspace: 0pt;mso-table-rspace: 0pt;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;">
+                                                                    <tbody>
+                                                                    <tr>
+
+                                                                        <td valign="top" class="mcnTextContent"
+                                                                            style="padding-top: 9px;padding-right: 18px;padding-bottom: 9px;padding-left: 18px;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;word-break: break-word;color: #000000;font-family: Helvetica;font-size: 11px;line-height: 125%;text-align: center;">
+
+                                                                            <em>Copyright © 2015 Studio Mohawk, All
+                                                                                rights reserved.</em><br>
+                                                                            <br>
+                                                                            <br>
+                                                                            <a class="utilityLink"
+                                                                               href="http://studiomohawk.us2.list-manage.com/unsubscribe?u=0c8604ec46b9f779a3f5b6a1c&id=9af01549dd&e=e56aeee38d&c=dd176efe76"
+                                                                               style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">unsubscribe
+                                                                                from this list</a>&nbsp;&nbsp;&nbsp; <a
+                                                                                class="utilityLink"
+                                                                                href="http://studiomohawk.us2.list-manage1.com/profile?u=0c8604ec46b9f779a3f5b6a1c&id=9af01549dd&e=e56aeee38d"
+                                                                                style="mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #000000;font-weight: bold;text-decoration: none;">update
+                                                                            subscription preferences</a>&nbsp;<br>
+                                                                            <br>
+                                                                            <a href="http://www.mailchimp.com/monkey-rewards/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=0c8604ec46b9f779a3f5b6a1c&afl=1"><img
+                                                                                    src="http://gallery.mailchimp.com/089443193dd93823f3fed78b4/images/banner1.gif"
+                                                                                    border="0"
+                                                                                    alt="Email Marketing Powered by MailChimp"
+                                                                                    title="MailChimp Email Marketing"></a>
+                                                                        </td>
+                                                                    </tr>
+                                                                    </tbody>
+                                                                </table>
+
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!-- // END FOOTER -->
+                        </td>
+                    </tr>
+                </table>
+                <!-- // END TEMPLATE -->
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</body>
+</html>
+

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Node Weekly Issue 113: November 19, 2015</title>
+    <meta name="description" content="Building Command Line Tools with Node, An Introduction to Testing Node.js, Microsoft Visual Studio Code Now Open Source, Opbeat announce Node.js beta, Node.js Tools 1.1 for Visual Studio Released, and more.">
+    <link rel="stylesheet" href="/assets/app-e7c86ec1525117b125b9b5b145f90a16.css">
+    <link rel="alternate" type="application/rss+xml" title="Node Weekly" href="/rss/1jb3kp7e" />
+    <link rel="stylesheet" href="/stylesheets/node.css">
+
+    <meta name="csrf-token" content="J4DLYiG9FiQrImCjaQVXFChVZIy/coCUmuVy/eSHBv8=">
+
+    <script src="/jquery.min.js"></script>
+</head>
+<body class="node dom dom-node issues 113 node issue">
+<div class="containerweb">
+    <header>
+        <nav class="pub_nav">
+            <div class="sitename" style="cursor: pointer" onclick="window.location.href='/'"><a href="/">Node Weekly</a></div>
+
+            <div class="items">
+
+                <a href="/issues" class="issues">Archives</a><span class="divider">|</span>
+                <a href="/search" class="search">Search</a><span class="divider">|</span>
+                <a href="/latest" class="latest">Latest Issue</a><span class="divider">|</span>
+                <a href="/rss/1boagb7m">RSS</a>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <main>
+
+        <!-- %= pub_partial :subscribe_box % -->
+
+        <div class="floatingsearch"><form class="search" method="get" action="/search">
+            <input type="text" class="q" name="q" value=""  placeholder="Search" size="20" />
+            <input type="hidden" name="pub" value="node" />
+            <button class="submit awesome">Search</button>
+        </form>
+        </div>
+
+        <h1><a href="/issues" style="text-decoration: underline">Issues</a> &raquo; 113</h1>
+
+        <div class="nomobile"><div class="subscribe_box" class="">
+            <form class="subscribe" action="/subscribe" method="POST">
+                <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                <input type="hidden" name="_csrf" value="J4DLYiG9FiQrImCjaQVXFChVZIy/coCUmuVy/eSHBv8=" />
+            </form>
+        </div>
+        </div>
+
+        <div class="issue-html"><table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family: 'helvetica neue', helvetica, arial, sans-serif; font-size: 14px; line-height: 20px; color: #333"><tr><td align="center" valign="top">
+            <table border="0" width="640" cellpadding="0" cellspacing="0" class="container noarchive" style="border-collapse: collapse;"><tr><td style="padding-top: 6px; padding-bottom: 6px; font-size: 12px; text-align: center; color: #555">
+                <span class="nomo">This week's Node and io.js news<br></span><a target="_blank" href="http://nodeweekly.com/issues/113" style="color: #6ca629">Read this e-mail on the Web</a>
+            </td></tr></table>
+            <table border="0" width="640" cellpadding="0" cellspacing="0" class="container" style="border-collapse: collapse">
+                <tr><td style="background-color: #6ca629"><table width="100%" cellspacing="0" cellpadding="0" align="left"><tr><td align="left" class="block" style="padding: 6px 12px;">
+                    <table align="left" width="50%" class="gowide"><tr><td><span style="line-height: 36px; font-size: 23px; color: #6ca629; text-transform: lowercase; font-weight: 500; color: #ffffff; -webkit-font-smoothing: antialiased;">Node Weekly</span></td></tr></table>
+                    <table align="left" style="text-align: right" width="50%" class="gowide lonmo"><tr><td><span style="font-size: 14px; line-height: 36px; font-weight: normal; color: #ffffff">
+November 19, 2015  #113
+</span></td></tr></table>
+                </td></tr></table></td></tr>
+                <tr><td style="padding: 16px 12px 12px 12px" align="left">
+                    <div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                        Tim Pettersen
+                    </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://developer.atlassian.com/blog/2015/11/scripting-with-node/?utm_source=nodeweekly&amp;utm_medium=email" title="developer.atlassian.com/blog/2015/11/scripting-with-node/" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Building Command Line Tools with Node</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            A tutorial packed with tips for building a script or command line tool using Node and npm, from parsing command line options to rendering colored output and progress bars.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    YouTube
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://www.youtube.com/watch?v=u2XCdkL4bWI" title="www.youtube.com/watch?v=u2XCdkL4bWI" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">An Introduction to Testing Node.js</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            A 30 minute Nodevember talk by Jordan Kasper that walks through some strategies for testing Node apps using Mocha.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Microsoft
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://github.com/Microsoft/vscode?utm_source=nodeweekly&amp;utm_medium=email" title="github.com/Microsoft/vscode" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Microsoft Visual Studio Code Now Open Source</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            Visual Studio Code is a code editor built by Microsoft. It’s mostly written in TypeScript and runs as a desktop app using Node and <a target="_blank" href="https://github.com/atom/electron">Electron.</a><br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Opbeat
+                    <span style="background-color: #ffffcc; color: #aaaa00; font-weight: normal; padding: 1px 5px 0px 6px;">Sponsored</span>
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://opbeat.com/nodejs/?utm_source=nodeweekly&amp;utm_medium=ad&amp;utm_content=&amp;utm_campaign=nodebeta" title="opbeat.com/nodejs/?utm_source=nodeweekly&amp;utm_medium=ad&amp;utm_content=&amp;utm_campaign=nodebeta" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Opbeat announce Node.js beta</a></div>
+                        <div style="font-size: 14px; line-height: 19px">Opbeat, the simple performance monitoring tool for developers, is now available for Node.js. Opbeat is integrated with your codebase &amp; makes monitoring and debugging your production apps faster, and your code better. <a target="_blank" href="https://opbeat.com/nodejs/?utm_source=nodeweekly&amp;utm_medium=ad&amp;utm_content=&amp;utm_campaign=nodebeta">Sign up to the private beta here.</a><br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"><a target="_blank" href="https://opbeat.com/nodejs/?utm_source=nodeweekly&amp;utm_medium=ad&amp;utm_content=&amp;utm_campaign=nodebeta"><img src="https://copm.s3.amazonaws.com/5948b527.png" style="border: 0" width="100" height="100" alt="Opbeat"></a></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Microsoft
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://blogs.msdn.com/b/visualstudio/archive/2015/11/18/node-js-tools-1-1-for-visual-studio-released.aspx?utm_source=nodeweekly&amp;utm_medium=email" title="blogs.msdn.com/b/visualstudio/archive/2015/11/18/node-js-tools-1-1-for-visual-studio-released.aspx" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Node.js Tools 1.1 for Visual Studio Released</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            Visual Studio based developers rejoice. Now includes a Quick IntelliSense mode, better debugging, npm 3 support, Code Snippets support, improved performance, and more.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Jeremiah Senkpiel
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://nodejs.org/en/blog/release/v5.1.0/?utm_source=nodeweekly&amp;utm_medium=email" title="nodejs.org/en/blog/release/v5.1.0/" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Node v5.1.0 (Stable) Released</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            Mostly minor upgrades and updates. npm and http_parser have been upgraded, and a few core packages have had bugs fixed.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Alexander Gugel
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://gugel.io/ied/?utm_source=nodeweekly&amp;utm_medium=email" title="gugel.io/ied/" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">ied: A Faster, Alternative Package Manager</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            I doubt npm will be toppled soon, but it’s great to see new ideas in package management come along and get absorbed.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    npm
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://github.com/npm/npm/issues/10380?utm_source=nodeweekly&amp;utm_medium=email" title="github.com/npm/npm/issues/10380" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">Investigating an npm 3 Performance Regression</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            “We’ve got a network utilization regression that’s at the root of the npm3 install performance.” This is a very extensive dive.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><div style="color: #6ca629; font-weight: normal; font-size: 12px; line-height: 12px; text-transform: uppercase; margin-top: 8px">
+                    Azat Mardan
+                </div>
+                    <table width="460" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://webapplog.com/express/?utm_source=nodeweekly&amp;utm_medium=email" title="webapplog.com/express/" style="display: block; color: #2518b5; line-height: 23px; font-weight: normal; ">ExpressWorks Walkthrough Videos</a></div>
+                        <div style="font-size: 14px; line-height: 19px">
+                            A set of 9 videos following the course provided by the ExpressWorks app, a local, interactive tool that helps you learn Express.js.
+                            <br><br>
+                        </div>
+                    </td></tr></table>
+                    <table width="150" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><p style="color: #6ca629; font-size: 20px; font-weight: normal; margin-top: 0; margin-bottom: 10px">Jobs</p>
+                    <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                        <li style="color: #6ca629; margin-bottom: 8px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://aka.ms/typescriptPM?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px;  line-height: 18px; font-weight: normal">Senior PM for TypeScript @ Microsoft</a><br><span style="font-size: 12px; color: #999999">Looking for a JavaScript maverick to shape the future of TypeScript &amp; JavaScript. Evolve the language, facilitate collaboration amongst the community, and enable devs to create great apps using TypeScript across several IDEs &amp; editors. This is a great role for an author of a JS framework ready to make an even greater impact.</span> <span style="color: #6ca629; font-weight: normal; padding: 0px 4px 0px 4px; font-size: 12px; text-transform: uppercase">Microsoft</span>
+                        </li>
+                        <li style="color: #6ca629; margin-bottom: 8px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://krb-sjobs.brassring.com/TGWebHost/jobdetails.aspx?partnerid=26059&amp;siteid=5016&amp;AReq=10163BR" style="color: #2518b5; margin-right: 4px;  line-height: 18px; font-weight: normal">Developer Evangelist with StrongLoop/IBM (Remote)</a><br><span style="font-size: 12px; color: #999999">StrongLoop and IBM are helping to grow and support the Node.js community, and we're looking for passionate individuals to help us in that mission! If you love writing and speaking about Node we'd love to talk to you.</span> <span style="color: #6ca629; font-weight: normal; padding: 0px 4px 0px 4px; font-size: 12px; text-transform: uppercase">IBM</span>
+                        </li>
+                        <li style="color: #6ca629; margin-bottom: 8px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://hired.com/?utm_source=newsletters&amp;utm_medium=nodeweekly&amp;utm_campaign=q4_15-petercooperpress&amp;utm_term=job&amp;utm_content=111915-psst" style="color: #2518b5; margin-right: 4px;  line-height: 18px; font-weight: normal">Psst. Stop Applying For Jobs</a><br><span style="font-size: 12px; color: #999999">And let jobs apply for you! Through Hired, companies looking for someone with your skills and experience reach out with interview requests, which include salary and other benefits upfront. </span> <span style="color: #6ca629; font-weight: normal; padding: 0px 4px 0px 4px; font-size: 12px; text-transform: uppercase">Hired<span>.</span>com</span>
+                        </li>
+                    </ul>
+                    <p style="color: #6ca629; font-size: 20px; font-weight: normal; margin-bottom: 10px">In brief</p>
+                    <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.nodeknockout.com/#2015winners?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Node.js Knockout 2015 Winners</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #dd9900; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Node Knockout </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.nginx.com/blog/5-performance-tips-for-node-js-applications/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">5 Tips to Increase Node.js Application Performance</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Floyd Smith </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/mdp/bluemonday-js/blob/master/README.md#turning-golang-code-into-an-npm-module-with-gopherjs?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Turning GoLang Code into an npm Module with GopherJS</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Mark Percival </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.outlearn.com/learn/vkarpov15/ng-best-practices?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">ng-best-practices - Learn to Build Angular Apps the Right Way</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <br><span style="font-size: 12px; color: #666666">Avoid common mistakes and take your Angular skills to the next level with this free tutorial.</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Outlearn   <span style="background-color: #ffffbb; color: #aaaa00; font-weight: normal; padding: 1px 5px 0px 6px;">Sponsored</span></span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://jamesknelson.com/writing-npm-packages-with-es6-using-the-babel-6-cli/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Writing NPM Packages with ES6 using the Babel 6 CLI</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>James K Nelson </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://blog.jakegaylor.com/2015/11/19/nodejs-twilio-provide-business-value/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">How to Use Node and Twilio to Provide Business Value</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Jake Gaylor </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://coderesponsible.com/scraping-the-web-with-node-js/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Scraping the Web with Node.js</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Ryan Burgess </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://jilles.me/managing-node-versions-with-nvm/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Managing Node versions with nvm</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #66aa00; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Jilles Soeters </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/thunks/thunk-redis/issues/12?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Benchmark of 3 Node Redis Libraries</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #999900; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>thunks </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.transitions-now.com/merging-time-series-data-streams-a-node-js-streams-case/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Merging Time Series Data Streams - A Node.js Streams Use Case</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #999900; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Transitions Now </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://developer.ibm.com/open/2015/11/17/updating-to-node-v4-there-will-be-hiccups/?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Updating to Node 4: There Will Be Hiccups</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #999900; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>IBM developerWorks </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.technology-ebay.de/the-teams/mobile-de/blog/nodejs-es6-war-story-2?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">Node.js and ES6 Instead of Java – A War Story: Part 2</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #999900; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>eBay Dev Blog </span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://dtdg.co/1ISXpPD?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">See custom metrics from your Node applications</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #888888; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">tools</span> <br><span style="font-size: 12px; color: #666666">Submit custom metrics using our http API or the Singly node bindings. See them in Datadog for graphing, analytics, and correlation.
+</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Datadog   <span style="background-color: #ffffbb; color: #aaaa00; font-weight: normal; padding: 1px 5px 0px 6px;">Sponsored</span></span> </li>
+                        <li style="color: #ee5533; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/sterlingw/SimpleSpy.js?utm_source=nodeweekly&amp;utm_medium=email" style="color: #2518b5; margin-right: 4px; line-height: 20px; font-weight: normal">SimpleSpy.js: Standalone Library for Creating Spies in Node</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #ffffff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #6ca629; font-weight: normal; font-size: 12px; text-transform: uppercase"><br>Sterling Whitley </span> </li>
+                    </ul>
+                </td></tr>
+                <tr><td bgcolor="#f4f4f4" style="font-family: verdana, helvetica, arial, sans-serif; text-align: left; padding-top: 12px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px" class="noarchive">
+                    <p style="line-height: 15px; font-size: 11px; margin-top: 0">Node Weekly is curated by <a target="_blank" href="https://twitter.com/peterc" style="color: #6ca629">Peter Cooper</a> and published by <a target="_blank" href="https://cooperpress.com/" style="color: #6ca629">Cooper Press</a>.<br>Node.js is a trademark of <a target="_blank" href="https://www.joyent.com/" style="color: #6ca629">Joyent, Inc.</a> Used with kind permission.<br><br>Send feedback by simply replying to this mail.<br>Want to sponsor an issue? See our <a target="_blank" href="https://cooperpress.com/mediakit2014q3.pdf" style="color: #666666">media kit.</a><br>Want to post a job? E-mail us or <a target="_blank" href="https://booking.cooperpress.com/jobs" style="color: #666666">use our self-serve system.</a></p>
+                    <p style="font-size: 14px"><a target="_blank" href="*%7CUNSUB%7C*" style="color: #6ca629">Unsubscribe</a> : <a target="_blank" href="*%7CUPDATE_PROFILE%7C*" style="color: #6ca629">Change email address</a> : <a target="_blank" href="http://nodeweekly.com/issues/113" style="color: #6ca629">Read this issue on the Web</a></p>
+                    <p style="font-size: 11px; line-height: 15px">© Cooper Press Ltd. Office 30, Lincoln Way, Louth, LN11 0LS, UK<br><a target="_blank" href="https://cooperpress.com/spam.html" style="color: #666666">Email policy</a> <a target="_blank" href="https://cooperpress.com/privacy.html" style="color: #666666">Privacy policy</a></p>
+                </td></tr>
+            </table>
+        </td></tr></table></div>
+
+        <!--
+            0,"Building Command Line Tools with Node",,0.0
+            1,"An Introduction to Testing Node.js",,0.0
+            2,"Microsoft Visual Studio Code Now Open Source",,0.0
+            3,"Opbeat announce Node.js beta",,0.0
+            4,"Node.js Tools 1.1 for Visual Studio Released",,0.0
+            5,"Node v5.1.0 (Stable) Released",,0.0
+            6,"ied: A Faster, Alternative Package Manager",,0.0
+            7,"Investigating an npm 3 Performance Regression",,0.0
+            8,"ExpressWorks Walkthrough Videos",,0.0
+            9,"Senior PM for TypeScript @ Microsoft",,0.0
+            10,"Developer Evangelist with StrongLoop/IBM (Remote)",,0.0
+            11,"Psst. Stop Applying For Jobs",,0.0
+            12,"Node.js Knockout 2015 Winners",,0.0
+            13,"5 Tips to Increase Node.js Application Performance",,0.0
+            14,"Turning GoLang Code into an npm Module with GopherJS",,0.0
+            15,"ng-best-practices - Learn to Build Angular Apps the Right Way",,0.0
+            16,"Writing NPM Packages with ES6 using the Babel 6 CLI",,0.0
+            17,"How to Use Node and Twilio to Provide Business Value",,0.0
+            18,"Scraping the Web with Node.js",,0.0
+            19,"Managing Node versions with nvm",,0.0
+            20,"Benchmark of 3 Node Redis Libraries",,0.0
+            21,"Merging Time Series Data Streams - A Node.js Streams Use Case",,0.0
+            22,"Updating to Node 4: There Will Be Hiccups",,0.0
+            23,"Node.js and ES6 Instead of Java – A War Story: Part 2",,0.0
+            24,"See custom metrics from your Node applications",,0.0
+            25,"SimpleSpy.js: Standalone Library for Creating Spies in Node",,0.0-->
+
+        <div class="subscribe_box" class="">
+            <form class="subscribe" action="/subscribe" method="POST">
+                <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                <input type="hidden" name="_csrf" value="J4DLYiG9FiQrImCjaQVXFChVZIy/coCUmuVy/eSHBv8=" />
+            </form>
+        </div>
+
+        <div class="strap"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe</a><br />Published by <a href="https://cooperpress.com/">Cooper Press</a></div>
+    </main>
+    <footer>
+    </footer>
+</div>
+
+<div id="border-b"></div>
+<script src="/assets/app-6a8b9c037c77af65e5e71738cc958975.js"></script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-32535004-7', 'nodeweekly.com');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

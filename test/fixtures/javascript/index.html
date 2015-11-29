@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Weekly Issue 260: November 27, 2015</title>
+    <meta name="description" content="Concurrently JavaScript: 3 Posts on Concurrency, An ES6 Overview in 350 Bullet Points, What Are The Best JavaScript IDEs?, NEW: Performance Metrics for Angular, Microm: A 'Microphone to MP3' Library, and more.">
+    <link rel="stylesheet" href="/assets/app-e7c86ec1525117b125b9b5b145f90a16.css">
+    <link rel="alternate" type="application/rss+xml" title="JavaScript Weekly" href="/rss/198oe99f" />
+    <link rel="stylesheet" href="/stylesheets/jw.css">
+
+    <meta name="csrf-token" content="PhrAszwABsTMzdAiuS0ySNTe5aGxlKlCnvZFPyCLBt4=">
+
+    <script src="/jquery.min.js"></script>
+</head>
+<body class="jw dom dom-jw issues 260 jw issue">
+<div class="containerweb">
+    <header>
+        <nav class="pub_nav">
+            <div class="sitename" style="cursor: pointer" onclick="window.location.href='/'"><a href="/">JavaScript Weekly</a></div>
+
+            <div class="items">
+
+                <a href="/issues" class="issues">Archives</a><span class="divider">|</span>
+                <a href="/search" class="search">Search</a><span class="divider">|</span>
+                <a href="/latest" class="latest">Latest Issue</a><span class="divider">|</span>
+                <a href="/rss/1le905b2">RSS</a>
+                </ul>
+            </div>
+        </nav>
+
+
+
+    </header>
+    <main>
+
+        <!-- %= pub_partial :subscribe_box % -->
+
+        <div class="floatingsearch"><form class="search" method="get" action="/search">
+            <input type="text" class="q" name="q" value=""  placeholder="Search" size="20" />
+            <input type="hidden" name="pub" value="jw" />
+            <button class="submit awesome">Search</button>
+        </form>
+        </div>
+
+        <h1><a href="/issues" style="text-decoration: underline">Issues</a> &raquo; 260</h1>
+
+        <div class="nomobile"><div class="subscribe_box" class="">
+            <form class="subscribe" action="/subscribe" method="POST">
+                <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                <input type="hidden" name="_csrf" value="PhrAszwABsTMzdAiuS0ySNTe5aGxlKlCnvZFPyCLBt4=" />
+            </form>
+        </div>
+        </div>
+
+        <div class="issue-html"><table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#ffffff" style="font-family: 'helvetica neue', helvetica, arial, sans-serif; font-size: 14px; line-height: 20px; color: #333"><tr><td align="center" valign="top">
+            <table border="0" width="670" cellpadding="0" cellspacing="0" class="container noarchive" style="border-collapse: collapse;"><tr><td style="padding-top: 6px; padding-bottom: 6px; font-size: 11px; text-align: center; color: #555; font-family: verdana, arial, sans-serif">
+                <span class="nomo">This week's JavaScript news</span><br><a target="_blank" href="http://javascriptweekly.com/issues/260" style="color: #00aaac">Read this e-mail on the Web</a>
+            </td></tr></table>
+            <table border="0" width="670" cellpadding="0" cellspacing="0" class="container" style="border-collapse: collapse">
+                <tr><td style="background-color: #00aaac"><table width="100%" cellspacing="0" cellpadding="0" align="left"><tr><td align="left" class="block" style="padding: 6px 12px;">
+                    <table align="left" width="50%" class="gowide"><tr><td><span style="line-height: 36px; font-size: 23px; color: #00aaac; font-weight: bold; color: #ffffff; -webkit-font-smoothing: antialiased;">JavaScript Weekly</span></td></tr></table>
+                    <table align="left" style="text-align: right" width="50%" class="gowide lonmo"><tr><td><span style="font-size: 14px; line-height: 36px; font-weight: normal; color: #ffffff">
+Issue 260 — November 27, 2015
+</span></td></tr></table>
+                </td></tr></table></td></tr>
+                <tr><td style="padding: 16px 12px 12px 12px" align="left">
+                    <table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                        <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://blog.getify.com/concurrently-javascript-1/?utm_source=javascriptweekly&amp;utm_medium=email" title="blog.getify.com/concurrently-javascript-1/" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Concurrently JavaScript: 3 Posts on Concurrency</a></div>
+                        <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                            Kyle Simpson covers concurrency vs parallelism, threads, asynchrony, reactive programming, and CSP (communicating sequential processes).
+                        </div>
+                        <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                            Kyle Simpson
+                        </div>
+                    </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://github.com/bevacqua/es6?utm_source=javascriptweekly&amp;utm_medium=email" title="github.com/bevacqua/es6" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">An ES6 Overview in 350 Bullet Points</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        Tired by lengthy articles and prefer snappy bulletpoints? This is a great way to skim through and get a bird’s eye view of ES6.
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Nicolas Bevacqua
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://www.slant.co/topics/1686/~javascript-ides?utm_source=javascriptweekly&amp;utm_medium=email" title="www.slant.co/topics/1686/~javascript-ides" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">What Are The Best JavaScript IDEs?</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        Crowdsourced summaries and comparisons of 18 different IDEs and text editors used by JavaScript developers.
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Slant
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://opbeat.com/angularjs/?utm_source=javascriptweekly&amp;utm_medium=newsletter&amp;utm_content=&amp;utm_campaign=angularbeta" title="opbeat.com/angularjs/?utm_source=javascriptweekly&amp;utm_medium=newsletter&amp;utm_content=&amp;utm_campaign=angularbeta" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">NEW: Performance Metrics for Angular</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">Get a breakdown of the digest cycle including AJAX, templating, services &amp; cache calls. See how each controller spends its time and what’s slowing your app. JavaScript Weekly readers get early access to the beta. <a target="_blank" href="https://opbeat.com/angularjs/?utm_source=javascriptweekly&amp;utm_medium=newsletter&amp;utm_content=&amp;utm_campaign=angularbeta">Sign up.</a>
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Opbeat
+                        <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span>
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"><a target="_blank" href="https://opbeat.com/angularjs/?utm_source=javascriptweekly&amp;utm_medium=newsletter&amp;utm_content=&amp;utm_campaign=angularbeta"><img src="https://copm.s3.amazonaws.com/93727d99.jpg" style="border: 0px solid #bbbbbb" width="100" height="100" alt="Opbeat"></a></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://github.com/zzarcon/microm?utm_source=javascriptweekly&amp;utm_medium=email" title="github.com/zzarcon/microm" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Microm: A 'Microphone to MP3' Library</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        A library to record microphone input in the browser and return an MP3 blob. Brings together lamejs, webrtc-adapter, and RecordRTC. <a target="_blank" href="https://zzarcon.github.io/microm/">Demo page.</a>
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Hector Leon Zarco Garcia
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/?utm_source=javascriptweekly&amp;utm_medium=email" title="www.sitepoint.com/top-javascript-frameworks-libraries-tools-use/" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">Top Frameworks, Libraries &amp; Tools and When to Use Them</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        Quick high level summaries of Angular, React, Backbone, Ember, jQuery, Underscore, D3.js, Babylon.js, Three.js, Mocha/Chai, Karma, PhantomJS, Grunt/Gulp, and Babel.
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        SitePoint
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="https://quickleft.com/blog/six-things-know-wordpress-moving-javascript/?utm_source=javascriptweekly&amp;utm_medium=email" title="quickleft.com/blog/six-things-know-wordpress-moving-javascript/" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">6 Things To Know About WordPress Moving to JS</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        No, WordPress is not ditching PHP wholesale and moving to JavaScript, but it’s using Node and React for a new admin tool called Calypso.
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Alex Johnson
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><table width="490" align="left" class="gowide" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin-bottom: 20px"><tr><td>
+                    <div style="font-size: 18px; margin: 2px 0px"><a target="_blank" href="http://www.amazon.com/gp/product/B018D12X0C?utm_source=javascriptweekly&amp;utm_medium=email" title="www.amazon.com/gp/product/B018D12X0C" style="display: block; color: #0055bb; line-height: 24px; text-decoration: underline; font-weight: normal">What Every JS Developer Should Know About ES2015</a></div>
+                    <div style="font-size: 14px; line-height: 19px; margin-top: 0px; margin-bottom: 3px">
+                        A Kindle book that’s currently free but only until the ‘end of the week’.
+                    </div>
+                    <div style="color: #009900; font-weight: normal; font-size: 12px; line-height: 14px; text-transform: uppercase; margin-top: 5px; font-family: verdana, arial, sans-serif">
+                        Amazon
+                    </div>
+                </td></tr></table>
+                    <table width="140" class="nomo" align="left"><tr><td style="text-align: center"></td></tr></table>
+                    <br clear="all" style="clear: both"><p style="color: #00aaac; font-size: 20px; font-weight: normal; margin-top: 8px; margin-bottom: 10px">Jobs</p>
+                    <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                        <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                            <a target="_blank" href="http://engineering.alphasights.com/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">Full Stack Software Engineer - Ruby &amp; Ember at AlphaSights (London, UK)</a><span style="font-size: 12px; color: #666666">In this role you'll work in a project team with two week iterations and be part of iteration planning and retros. You’ll collaborate with and understand all other functions of AlphaSights to make thoughtful and creative software decisions.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">AlphaSights</span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                            <a target="_blank" href="http://codinghouse.co/#!careers?job=senior-dev" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">JavaScript Instructor Co Founder</a><span style="font-size: 12px; color: #666666">We are a cash flow positive boot camp in Silicon Valley looking for a Lead Senior Instructor (Partner). 120K to 160K depending on your skills. Revenue sharing, substantial equity and benefits.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">CodingHouse</span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 12px; font-size: 15px; line-height: 17px">
+                            <a target="_blank" href="https://hired.com/?utm_source=newsletters&amp;utm_medium=javascriptweekly&amp;utm_campaign=q4_15-petercooperpress&amp;utm_term=job&amp;utm_content=112715-flip" style="color: #0055bb; margin-right: 4px; line-height: 18px; font-weight: normal">Flip the (Java) Script and Let Companies Compete for You.</a><span style="font-size: 12px; color: #666666">Through Hired, companies reach out to you with interview requests which include salary and other benefit information upfront. Compare offers side by side with transparency, so you know the choice you make is the right one.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif">Hired</span>
+                        </li>
+                    </ul>
+                    <p style="color: #00aaac; font-size: 20px; font-weight: normal; margin-top: 24px; margin-bottom: 10px">In brief</p>
+                    <ul style="padding-left: 18px; margin-top: 10px; list-style-type: square">
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://conf.reactjs.com/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">React.js Conf - February 22-23 in San Francisco</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <br><span style="font-size: 12px; color: #666666">
+The CFP is open until December 13.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br></span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://go.rangle.io/webinar-react-native?utm_campaign=ReactNative%20Webinar%20-%20December%2015%2C%202015&amp;utm_medium=e-newsletter&amp;utm_source=JS%20Weekly" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">NEW WEBINAR: Using React and JavaScript to build near native cross-platform mobile applications</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <br><span style="font-size: 12px; color: #666666">Move towards a radical fusion of mobile native and hybrid JavaScript development to understand why React Native should be the choice for your next mobile web project.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>RANGLE.IO   <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span></span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://angularjs.blogspot.com/2015/11/angularjs-15-beta2-and-14-releases.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">AngularJS 1.5.0-beta.2 and 1.4.8 Released</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br></span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.microsoft.com/en-us/WindowsForBusiness/End-of-IE-support?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Microsoft to Stop Supporting IE8, IE9, and IE10 in January 2016</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Microsoft </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://dm.gl/2015/11/26/wallaby-for-visual-studio-code/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Wallaby.js for Visual Studio Code Released</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00aadd; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">news</span> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #bbbbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tools</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Artem Govorov </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.sitepoint.com/how-to-integrate-jquery-plugins-into-an-ember-application/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">How to Integrate jQuery Plugins into an Ember Application</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Lamin Sanneh </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.jvandemo.com/how-to-build-minesweeper-using-angular-2-and-immutable-js/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">How to build Minesweeper using Angular 2 and Immutable.js</a> <br><span style="font-size: 12px; color: #666666">You can
+<a target="_blank" href="http://plnkr.co/edit/MyuNgX4okn7sao7GkVdG?p=preview">play it here.</a></span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br></span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.safaribooksonline.com/blog/2015/11/24/refactoring-javascript-microservice-backbone-marionette/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Refactoring to Microservices: What We Learned with Backbone/Marionette</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Pasha Craydon </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.2ality.com/2015/11/string-padding.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">An Explanation of the 'String Padding' Proposal</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <br><span style="font-size: 12px; color: #666666">
+A look at a proposal (at stage 3 in the official process) for adding padStart and padEnd functions to strings.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Dr. Axel Rauschmayer </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://engineroom.teamwork.com/10-things-to-know-about-gulp/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">10 Things to Know About Gulp</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Adam Lynch </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://orizens.com/wp/topics/5-steps-to-prepare-your-angular-1-code-to-angular-2/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Steps To Prepare Your Angular 1 Code for Angular 2</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Oren Farhi </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://yoranbrondsema.com/command-pattern-applied-ember-js-application/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">The Command Pattern Applied to Your Ember.js Application</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Yoran Brondsema </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://booker.codes/data-driven-tests-in-javascript-using-mocha/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Data-Driven Tests in JavaScript Using Mocha</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Alex Booker </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.2ality.com/2015/11/trailing-comma-parameters.html?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">ES.stage3 Proposal: Trailing Commas in Function Parameter Lists &amp; Calls</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Dr. Axel Rauschmayer </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://krasimirtsonev.com/blog/article/distributing-react-components-babel-browserify-webpack-uglifyjs?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Distributing React Components</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #99dd00; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">tutorial</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Krasimir Tsonev </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://www.outlearn.com/learn/vkarpov15/angular-crash-course?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Crash Course to Angular</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #990099; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">course</span> <br><span style="font-size: 12px; color: #666666">Jump right in and build your first Angular web app today.</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Outlearn   <span style="background-color: #ffff99; color: #777700; font-weight: normal; padding: 1px 5px 0px 5px;">Sponsored</span></span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://en.arguman.org/react-is-killing-angular?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">React Is Killing Angular</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <br><span style="font-size: 12px; color: #666666">
+Yes, it’s only an opinion, but here it’s presented in a unique way.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Argument Map </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://www.sitepoint.com/frameworkless-javascript/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">The Pros and Cons of Frameworkless JavaScript</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Paweł Zagrobelny </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://engineering.khanacademy.org/posts/js-packaging-http2.htm?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Forgo JS Packaging? Not So Fast</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Khan Academy </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://auth0.com/blog/2015/11/20/face-off-virtual-dom-vs-incremental-dom-vs-glimmer/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">React Virtual DOM vs Incremental DOM vs Ember’s Glimmer: Fight</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #AF7817; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">opinion</span> <br><span style="font-size: 12px; color: #666666">
+Benchmarks of three different ways to work with dynamic DOMs.
+</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Sebastián Peyrott </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://responsifyjs.space/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">ResponsifyJS: Dynamically Responsive Images jQuery Plugin</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Wentin Zhang </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/accommodavid/spooky-react?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Spooky React: A 'Skeleton' for Front-End Apps with React, ES2015, and Browserify</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>David van Gelder de Neufville </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/ncsoft/Unreal.js?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">Unreal.js: A Plugin Bringing V8 JavaScript into Unreal Engine 4</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>NCSOFT </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="http://mojs.io/?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">mo.js: Motion Graphics for the Web</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Oleg Solomka </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/callmecavs/jump.js?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">jump.js: A Small, Modern, Dependency-Free Smooth Scrolling Library</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Michael Cavalea </span>
+                        </li>
+                        <li style="color: #00aaac; margin-bottom: 16px; font-size: 16px; line-height: 16px">
+                            <a target="_blank" href="https://github.com/BelkaLab/react-yearly-calendar?utm_source=javascriptweekly&amp;utm_medium=email" style="color: #0055bb; margin-right: 4px; line-height: 20px; font-weight: normal">react-yearly-calendar: React.js Yearly Calendar Component</a> <span style="font-size: 12px; padding: 1px 3px; text-transform: uppercase; background-color: #00bbbb; color: #fff; font-weight: normal; font-family: verdana, arial, sans-serif">code</span> <span style="color: #009900; font-weight: normal; font-size: 12px; text-transform: uppercase; font-family: verdana, arial, sans-serif"><br>Belka </span>
+                        </li>
+                    </ul>
+                </td></tr>
+                <tr><td bgcolor="#f4f4f4" style="font-family: verdana, helvetica, arial, sans-serif; text-align: left; padding-top: 12px; padding-left: 12px; padding-right: 12px; padding-bottom: 12px" class="noarchive">
+                    <p style="line-height: 15px; font-size: 11px; margin-top: 0">Curated by <a target="_blank" href="http://twitter.com/peterc" style="color: #00aaac">Peter Cooper</a> and published by <a target="_blank" href="https://cooperpress.com/" style="color: #00aaac">Cooper Press</a>.</p>
+                    <p style="font-size: 13px"><a target="_blank" href="*%7CUNSUB%7C*" style="color: #00aaac">Stop getting JavaScript Weekly</a> : <a target="_blank" href="*%7CUPDATE_PROFILE%7C*" style="color: #00aaac">Change email address</a> : <a target="_blank" href="http://javascriptweekly.com/issues/260" style="color: #00aaac">Read this issue on the Web</a></p>
+                    <p style="font-size: 11px; line-height: 15px">© Cooper Press Ltd. Office 30, Lincoln Way, Louth, LN11 0LS, UK</p>
+                </td></tr>
+            </table>
+        </td></tr></table></div>
+
+        <!--
+            0,"Concurrently JavaScript: 3 Posts on Concurrency",,0.0
+            1,"An ES6 Overview in 350 Bullet Points",,0.0
+            2,"What Are The Best JavaScript IDEs?",,0.0
+            3,"NEW: Performance Metrics for Angular",,0.0
+            4,"Microm: A 'Microphone to MP3' Library",,0.0
+            5,"Top Frameworks, Libraries & Tools and When to Use Them",,0.0
+            6,"6 Things To Know About WordPress Moving to JS",,0.0
+            7,"What Every JS Developer Should Know About ES2015",,0.0
+            8,"Full Stack Software Engineer - Ruby & Ember at AlphaSights (London, UK)",,0.0
+            9,"JavaScript Instructor Co Founder",,0.0
+            10,"Flip the (Java) Script and Let Companies Compete for You.",,0.0
+            11,"React.js Conf - February 22-23 in San Francisco",,0.0
+            12,"NEW WEBINAR: Using React and JavaScript to build near native cross-platform mobile applications",,0.0
+            13,"AngularJS 1.5.0-beta.2 and 1.4.8 Released",,0.0
+            14,"Microsoft to Stop Supporting IE8, IE9, and IE10 in January 2016",,0.0
+            15,"Wallaby.js for Visual Studio Code Released",,0.0
+            16,"How to Integrate jQuery Plugins into an Ember Application",,0.0
+            17,"How to build Minesweeper using Angular 2 and Immutable.js",,0.0
+            18,"Refactoring to Microservices: What We Learned with Backbone/Marionette",,0.0
+            19,"An Explanation of the 'String Padding' Proposal",,0.0
+            20,"10 Things to Know About Gulp",,0.0
+            21,"Steps To Prepare Your Angular 1 Code for Angular 2",,0.0
+            22,"The Command Pattern Applied to Your Ember.js Application",,0.0
+            23,"Data-Driven Tests in JavaScript Using Mocha",,0.0
+            24,"ES.stage3 Proposal: Trailing Commas in Function Parameter Lists & Calls",,0.0
+            25,"Distributing React Components",,0.0
+            26,"Crash Course to Angular",,0.0
+            27,"React Is Killing Angular",,0.0
+            28,"The Pros and Cons of Frameworkless JavaScript",,0.0
+            29,"Forgo JS Packaging? Not So Fast",,0.0
+            30,"React Virtual DOM vs Incremental DOM vs Ember’s Glimmer: Fight",,0.0
+            31,"ResponsifyJS: Dynamically Responsive Images jQuery Plugin",,0.0
+            32,"Spooky React: A 'Skeleton' for Front-End Apps with React, ES2015, and Browserify",,0.0
+            33,"Unreal.js: A Plugin Bringing V8 JavaScript into Unreal Engine 4",,0.0
+            34,"mo.js: Motion Graphics for the Web",,0.0
+            35,"jump.js: A Small, Modern, Dependency-Free Smooth Scrolling Library",,0.0
+            36,"react-yearly-calendar: React.js Yearly Calendar Component",,0.0-->
+
+        <div class="subscribe_box" class="">
+            <form class="subscribe" action="/subscribe" method="POST">
+                <input type="email" placeholder="Want to subscribe? Enter your address here" class="email" name="email" id="email" /><button class="awesome" type="submit">Subscribe now &raquo;</button>
+                <div class="smallprint"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe.</a></div>
+                <input type="hidden" name="_csrf" value="PhrAszwABsTMzdAiuS0ySNTe5aGxlKlCnvZFPyCLBt4=" />
+            </form>
+        </div>
+
+        <div class="strap"><strong>ONE</strong> e-mail each Friday. Easy to unsubscribe. No spam &mdash; your e-mail address is <a href="https://cooperpress.com/spam.html">safe</a><br />Published by <a href="https://cooperpress.com/">Cooper Press</a> and curated by <a href="http://twitter.com/peterc">Peter Cooper</a></div>
+    </main>
+    <footer>
+    </footer>
+</div>
+
+<div id="border-b"></div>
+<script src="/assets/app-6a8b9c037c77af65e5e71738cc958975.js"></script>
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-2237791-21', 'javascriptweekly.com');
+    ga('send', 'pageview');
+</script>
+
+</body>
+</html>

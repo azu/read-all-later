@@ -1,15 +1,15 @@
 {
-  "name": "item-links-to-pocket",
+  "name": "read-all-later",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azu/item-links-to-pocket.git"
+    "url": "git+https://github.com/azu/read-all-later.git"
   },
   "author": "azu",
   "email": "azuciao@gmail.com",
-  "homepage": "https://github.com/azu/item-links-to-pocket",
+  "homepage": "https://github.com/azu/read-all-later",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azu/item-links-to-pocket/issues"
+    "url": "https://github.com/azu/read-all-later/issues"
   },
   "version": "1.0.0",
   "description": "item url to pocket",

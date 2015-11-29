@@ -9,7 +9,7 @@ export default class ServiceStore extends Store {
             URL: "",
             comment: "",
             tags: [],
-            selectedTags: ["All-later"],
+            selectedTags: ["read-all-later"],
             username: localStorage.getItem("username"),
             accessToken: localStorage.getItem("accessToken")
         };

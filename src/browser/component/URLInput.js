@@ -8,8 +8,9 @@ export default class URLInput extends React.Component {
     }
 
     render() {
-        return <div className="URLInput">
-            <label>URL:</label><input type="text" value={this.props.URL} onChange={this.onChange.bind(this)}/>
+        return <div className="URLInput form-group">
+            <label>URL:</label>
+            <input type="text" value={this.props.URL} onChange={this.onChange.bind(this)}/>
         </div>
     }
 }

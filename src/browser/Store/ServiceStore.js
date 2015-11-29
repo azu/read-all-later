@@ -9,11 +9,15 @@ export default class ServiceStore extends Store {
             URL: "",
             comment: "",
             tags: [],
-            selectedTags: [],
+            selectedTags: ["All-later"],
             username: localStorage.getItem("username"),
             accessToken: localStorage.getItem("accessToken")
         };
-        console.log(this.state);
+        this.register(keys.selectTags, (selectedTags) => {
+            this.setState({
+                selectedTags
+            });
+        });
         this.register(keys.loginPocket, ({username, accessToken}) => {
             localStorage.setItem("username", username);
             localStorage.setItem("accessToken", accessToken);

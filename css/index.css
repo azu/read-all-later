@@ -2,9 +2,8 @@
   width: 100%; }
 
 .URLInput input {
-  width: auto;
-  min-width: 80%;
-  max-width: 100%; }
+  width: 100%;
+  padding: 8px 52px 8px 10px; }
 
 .TitleInput {
   width: 100%; }
@@ -13,5 +12,25 @@
   display: inline-block; }
 .TitleInput input {
   margin: 0 auto 0 1em; }
+
+.Editor .ReactCodeMirror {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-color: #d9d9d9 #cccccc #b3b3b3;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #333333;
+  cursor: default;
+  outline: none; }
+
+.LoginButton button {
+  position: absolute;
+  right: 0; }
+
+.SubmitButton {
+  margin: 0.5em 0; }
+
+.App {
+  padding: 0.5em; }
 
 /*# sourceMappingURL=index.css.map */

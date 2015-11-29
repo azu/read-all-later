@@ -36,6 +36,7 @@
     "babel-preset-react": "^6.1.18",
     "babel-register": "^6.2.0",
     "body-parser": "^1.14.1",
+    "bootstrap": "^3.3.6",
     "cookie-parser": "^1.4.0",
     "electron-template-menu": "^1.0.3",
     "express": "^4.13.3",
@@ -52,6 +53,7 @@
     "react": "^0.14.3",
     "react-codemirror": "^0.2.1",
     "react-dom": "^0.14.3",
+    "react-select": "^0.9.1",
     "strip-utm": "^1.0.0"
   }
 }

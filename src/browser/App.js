@@ -10,6 +10,7 @@ import LoginButton from "./component/LoginButton";
 import AppContext from "./AppContext";
 const appContext = new AppContext();
 import Pocket from "./pocket/pocket"
+import notie from "notie";
 class App extends React.Component {
     constructor(...args) {
         super(...args);
@@ -44,11 +45,11 @@ class App extends React.Component {
                 });
             });
             Promise.all(addPromises).then(res => {
-                console.log("Success");
+                notie.alert(1, 'Success!', 1.5);
                 console.log(res);
             }).catch(error => {
                 console.error(error);
-                console.log("Failure");
+                notie.alert(3, 'Error.', 1.5);
             })
         }
 

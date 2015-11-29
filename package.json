@@ -26,15 +26,16 @@
     "url"
   ],
   "devDependencies": {
-    "babel-preset-es2015": "^6.1.18",
     "electron-prebuilt": "^0.35.1",
-    "electron-zip-packager": "^1.0.4",
     "espower-babel": "^4.0.0",
     "mocha": "^2.3.4",
-    "power-assert": "^1.2.0"
+    "power-assert": "^1.2.0",
+    "jsdom": "^7.1.0"
   },
   "dependencies": {
     "array-unique": "^0.2.1",
+    "babel-preset-es2015": "^6.1.18",
+    "electron-zip-packager": "^1.0.4",
     "babel-preset-react": "^6.1.18",
     "babel-register": "^6.2.0",
     "body-parser": "^1.14.1",
@@ -45,7 +46,6 @@
     "express-session": "^1.12.1",
     "fs-jetpack": "^0.7.0",
     "isomorphic-fetch": "^2.2.0",
-    "jsdom": "^7.1.0",
     "material-flux": "^1.3.1",
     "node-fetch": "^1.3.3",
     "notie": "^2.1.0",

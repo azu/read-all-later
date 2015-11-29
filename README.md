@@ -11,7 +11,7 @@ Read All Later is a client for [Pocket](https://getpocket.com/).
 
 ## Installation
 
-Download [latest binary](https://github.com/azu/read-all-later/releases/latest)
+Download from [latest release](https://github.com/azu/read-all-later/releases/latest)
 
 ## Usage
     
